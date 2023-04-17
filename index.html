@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -25,7 +25,7 @@
 
     <header>
         <div class="menu container">
-            <a href="#" class="logo">Logo</a>
+            <a href="#" class="logo text-decoration-none text-white">Logo</a>
             <input type="checkbox" id="menu">
             <label for="menu">
                 <img src="images/menu-btn.png" class="manu-icono" alt="">
@@ -33,62 +33,74 @@
 
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">Inicio</a> </li>
-                    <li><a href="#">Servicios</a> </li>
-                    <li><a href="#">Porfolio</a> </li>
-                    <li><a href="#">Contacto</a> </li>
+                    <li><a class="text-decoration-none text-white" href="#">Inicio</a> </li>
+                    <li><a class="text-decoration-none text-white" href="#">Servicios</a> </li>
+                    <li><a class="text-decoration-none text-white" href="#">Porfolio</a> </li>
+                    <li><a class="text-decoration-none text-white " href="#">Contacto</a> </li>
                 </ul>
             </nav>
         </div>
+        <!-- SECCIÓN DE INFORMACIÓN  -->
+
+        <div class="info-container container mt-5">
+            <div class="content">
+
+                <H1>HOLA MUNDO</H1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn-1 text-decoration-none text-white">Mas información</a>
+                <a href="#" class="btn-1 text-decoration-none text-white">Mas información</a>
+            </div>
+            <img src="images/astronauta.png" alt="">
+        </div>
     </header>
 
-    <!-- SECCIÓN DE INFORMACIÓN  -->
 
-    <div class="info-container container">
-        <div class="content">
-
-            <H1>HOLA MUNDO</H1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <a href="#" class="btn-1">Mas información</a>
-            <a href="#" class="btn-1">Mas información</a>
-        </div>
-        <img src="images/astronauta.png" alt="">
-    </div>
 
     <!-- SECCIÓN DE SERVICIOS -->
-    <main class="services container">
-        <div class="service">
-            <img src="images/icon1.svg" alt="">
-            <h3>Servicio 1</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-        </div>
-        <div class="service">
-            <img src="images/icon2.svg" alt="">
-            <h3>Servicio 2</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-        </div>
-        <div class="service">
-            <img src="images/icon3.svg" alt="">
-            <h3>Servicio 3</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-        </div>
-        <div class="service">
-            <img src="images/icon4.svg" alt="">
-            <h3>Servicio 4</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-        </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3 mb-5">
+                <div class="service">
+                    <img src="images/icon1.svg" class="mb-3" alt="">
+                    <h3>Servicio 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-5">
+                <div class="service">
+                    <img src="images/icon2.svg" class="mb-3" alt="">
+                    <h3>Servicio 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-5">
+                <div class="service">
+                    <img src="images/icon3.svg" class="mb-3" alt="">
+                    <h3>Servicio 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-5">
 
-    </main>
+                <div class="service">
+                    <img src="images/icon4.svg" class="mb-3" alt="">
+                    <h3>Servicio 4</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- SECCIÓN DE PORTAFOLIO -->
     <section class="porfolios container">
