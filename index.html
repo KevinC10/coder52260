@@ -23,7 +23,7 @@
 
 <body>
 
-    <header>
+    <header class="pb-5">
         <div class="menu container">
             <a href="#" class="logo text-decoration-none text-white">Logo</a>
             <input type="checkbox" id="menu">
@@ -34,20 +34,21 @@
             <nav class="navbar">
                 <ul>
                     <li><a class="text-decoration-none text-white" href="#">Inicio</a> </li>
-                    <li><a class="text-decoration-none text-white" href="#">Servicios</a> </li>
-                    <li><a class="text-decoration-none text-white" href="#">Porfolio</a> </li>
+                    <li><a class="text-decoration-none text-white" href="javascript:mover('servicios')">Servicios</a>
+                    </li>
+                    <li><a class="text-decoration-none text-white" href="javascript:mover('porfolios')">Porfolio</a>
+                    </li>
                     <li><a class="text-decoration-none text-white " href="#">Contacto</a> </li>
                 </ul>
             </nav>
-
         </div>
         <!-- SECCIÓN DE INFORMACIÓN  -->
 
         <div class="info-container container mt-5">
             <div class="content">
 
-                <H1>HOLA MUNDO</H1>
-                <p>
+                <H1 class="text-white">HOLA MUNDO</H1>
+                <p class="text-white">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
                 <a href="#" class="btn-1 text-decoration-none text-white">Mas información</a>
@@ -60,10 +61,10 @@
 
 
     <!-- SECCIÓN DE SERVICIOS -->
-    <div class="container mt-5">
+    <div id="servicios" class="container mt-5 pt-5">
         <div class="row">
             <div class="col-md-3 mb-5">
-                <div class="service">
+                <div class="service text-center">
                     <img src="images/icon1.svg" class="mb-3" alt="">
                     <h3>Servicio 1</h3>
                     <p>
@@ -72,7 +73,7 @@
                 </div>
             </div>
             <div class="col-md-3 mb-5">
-                <div class="service">
+                <div class="service text-center">
                     <img src="images/icon2.svg" class="mb-3" alt="">
                     <h3>Servicio 2</h3>
                     <p>
@@ -81,7 +82,7 @@
                 </div>
             </div>
             <div class="col-md-3 mb-5">
-                <div class="service">
+                <div class="service text-center">
                     <img src="images/icon3.svg" class="mb-3" alt="">
                     <h3>Servicio 3</h3>
                     <p>
@@ -91,7 +92,7 @@
             </div>
             <div class="col-md-3 mb-5">
 
-                <div class="service">
+                <div class="service text-center">
                     <img src="images/icon4.svg" class="mb-3" alt="">
                     <h3>Servicio 4</h3>
                     <p>
@@ -104,74 +105,89 @@
 
 
     <!-- SECCIÓN DE PORTAFOLIO -->
-    <section class="porfolios container">
+    <section id="porfolios" class="porfolios container mt-5">
 
-        <h2>Porfolios</h2>
-        <div class="porfolio">
-            <img src="images/img1.png" alt="">
-            <div class="porfolio-1">
-                <h3>Porfolio</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, aut sequi adipisci iure reprehenderit
-                    dignissimos distinctio quod rerum eaque nisi provident aliquam dicta deserunt natus accusamus
-                    repudiandae perspiciatis maiores? Reprehenderit.
-                </p>
-                <a href="#" class="btn-2">Información</a>
+        <h2 class="mb-5">Porfolios</h2>
 
+        <div class="row mt-5 mb-5">
+            <div class="col-sm-3">
+                <img class="img-porf" src="images/img1.png" alt="">
             </div>
-
+            <div class="col-sm-9">
+                <div class="porfolio-1">
+                    <h3>Porfolio 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, aut sequi adipisci iure
+                        reprehenderit
+                        dignissimos distinctio quod rerum eaque nisi provident aliquam dicta deserunt natus
+                        accusamus
+                        repudiandae perspiciatis maiores? Reprehenderit.
+                    </p>
+                    <a href="#" class="btn-1 mt-2">Información</a>
+                </div>
+            </div>
         </div>
 
-        <div class="porfolio">
-
-            <div class="porfolio-2">
-                <h3>Porfolio 2</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, aut sequi adipisci iure reprehenderit
-                    dignissimos distinctio quod rerum eaque nisi provident aliquam dicta deserunt natus accusamus
-                    repudiandae perspiciatis maiores? Reprehenderit.
-                </p>
-                <a href="#" class="btn-2">Información</a>
-
+        <div class="row mt-5 mb-5">
+            <div class="col-sm-9">
+                <div class="porfolio-2">
+                    <h3>Porfolio 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, aut sequi adipisci iure
+                        reprehenderit
+                        dignissimos distinctio quod rerum eaque nisi provident aliquam dicta deserunt natus
+                        accusamus
+                        repudiandae perspiciatis maiores? Reprehenderit.
+                    </p>
+                    <a href="#" class="btn-1 mt-2">Información</a>
+                </div>
             </div>
-            <img src="images/img2.png" alt="">
+            <div class="col-sm-3">
+                <img class="img-porf" src="images/img2.png" alt="">
+            </div>
         </div>
 
-        <div class="porfolio">
-            <img src="images/img3.png" alt="">
-            <div class="porfolio-1">
-                <h3>Porfolio 3</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, aut sequi adipisci iure reprehenderit
-                    dignissimos distinctio quod rerum eaque nisi provident aliquam dicta deserunt natus accusamus
-                    repudiandae perspiciatis maiores? Reprehenderit.
-                </p>
-                <a href="#" class="btn-2">Información</a>
-
+        <div class="row mt-5 mb-5">
+            <div class="col-sm-3">
+                <img class="img-porf" src="images/img3.png" alt="">
             </div>
-
+            <div class="col-sm-9">
+                <div class="porfolio-1">
+                    <h3>Porfolio 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, aut sequi adipisci iure
+                        reprehenderit
+                        dignissimos distinctio quod rerum eaque nisi provident aliquam dicta deserunt natus
+                        accusamus
+                        repudiandae perspiciatis maiores? Reprehenderit.
+                    </p>
+                    <a href="#" class="btn-1 mt-2">Información</a>
+                </div>
+            </div>
         </div>
 
-        <div class="porfolio">
-
-            <div class="porfolio-2">
-                <h3>Porfolio 4</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, aut sequi adipisci iure reprehenderit
-                    dignissimos distinctio quod rerum eaque nisi provident aliquam dicta deserunt natus accusamus
-                    repudiandae perspiciatis maiores? Reprehenderit.
-                </p>
-                <a href="#" class="btn-2">Información</a>
-
+        <div class="row mt-5 mb-5">
+            <div class="col-sm-9">
+                <div class="porfolio-2">
+                    <h3>Porfolio 4</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, aut sequi adipisci iure
+                        reprehenderit
+                        dignissimos distinctio quod rerum eaque nisi provident aliquam dicta deserunt natus
+                        accusamus
+                        repudiandae perspiciatis maiores? Reprehenderit.
+                    </p>
+                    <a href="#" class="btn-1 mt-2">Información</a>
+                </div>
             </div>
-            <img src="images/img4.png" alt="">
+            <div class="col-sm-3">
+                <img class="img-porf" src="images/img4.png" alt="">
+            </div>
         </div>
 
-
-        <article>
-
-        </article>
     </section>
+
+
     <!-- SECCIÓN DE SERVICIOS -->
     <footer>
         <div class="container">
@@ -195,10 +211,46 @@
                 </div>
 
             </div>
+        </div>
+
+        <div class="container mt-2 mb-5">
+            <h2 class="text-center h2 mb-4">Contáctanos</h2>
+            <form action="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-1">
+                            <input class="form-control" type="text" id="txtNombre" name="txtNombre" required
+                                placeholder="Nombres Completos">
+                        </div>
+                        <div class="form-group mb-1">
+                            <input class="form-control" type="email" id="txtCorreo" name="txtCorreo" required
+                                placeholder="E-mail">
+                        </div>
+                        <div class="form-group mb-1">
+                            <textarea rows="4" class="form-control" placeholder="Detalles"></textarea>
+                        </div>
+                        <div class="form-group mb-1">
+                            <button class="btn-1 mt-2 w-100" type="submit" name="btnSubmit"
+                                id="btnSubmit">Enviar</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img class="img-porf" src="images/img4.png" alt="">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
     </footer>
 
 
     <script src="" async defer></script>
+    <script>
+        function mover(div) {
+            document.getElementById(div).scrollIntoView();
+        }
+    </script>
 </body>
 
 </html>
