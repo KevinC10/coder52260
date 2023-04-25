@@ -1,0 +1,49 @@
+/* PAGINA SOBRE MI*/
+
+#headerSobre{
+    background-color: #525254;
+}
+
+.menuSobre {
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menuSobre .logo {
+    font-weight: 700;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.menuSobre .navbar ul li {
+    position: relative;
+    float: left;
+    padding: 20px;
+}
+
+.menuSobre.navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #2d2d2d;
+    display: block;
+}
+
+.menuSobre.navbar ul li a:hover {
+    color: #0EAEF3;
+}
+
+
+.menuSobre-icono {
+    width: 25px;
+}
+
+.menuSobre label {
+    cursor: pointer;
+    display: none;
+
+}
