@@ -19,6 +19,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../Css/Sobremi.css">
+    <link rel="stylesheet" href="../Css/aos.css">
 </head>
 
 <body>
@@ -47,7 +48,7 @@
 <section id="work" class="full-height px-lg-5">
     <div class="container">
 
-        <div class="row pb-4" data-aos="fade-up">
+        <div class="row pb-4 pt-4" data-aos="fade-up">
             <div class="col-lg-8">
                 <h6 class="text-brand">WORK</h6>
                 <h1>My Recent Projects</h1>
@@ -57,7 +58,7 @@
         <div class="row gy-4">
 
             <div class="col-md-6" data-aos="fade-up">
-                <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom rounded-4 bg-base shadow-effec card">
                     <div class="card-custom-image rounded-4">
                         <img class="rounded-4" src="./assets/images/project-1.jpg" alt="">
                     </div>
@@ -65,12 +66,12 @@
                         <h4>Startup Landing Page</h4>
                         <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
                         <a href="#" class="link-custom">Read More</a>
-                    </div>x`
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom rounded-4 bg-base shadow-effect card">
                     <div class="card-custom-image rounded-4">
                         <img class="rounded-4" src="./assets/images/project-2.png" alt="">
                     </div>
@@ -83,7 +84,7 @@
             </div>
 
             <div class="col-md-6" data-aos="fade-up">
-                <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom rounded-4 bg-base shadow-effect card">
                     <div class="card-custom-image rounded-4">
                         <img class="rounded-4" src="./assets/images/project-3.png" alt="">
                     </div>
@@ -96,7 +97,7 @@
             </div>
 
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom rounded-4 bg-base shadow-effect card">
                     <div class="card-custom-image rounded-4">
                         <img class="rounded-4" src="./assets/images/project-4.png" alt="">
                     </div>
@@ -113,13 +114,9 @@
 </section>
 <!-- //WORK -->
     
-
-
-    <script src="" async defer></script>
+    <script src="../js/aos.js"></script>
     <script>
-        function mover(div) {
-            document.getElementById(div).scrollIntoView();
-        }
+        AOS.init();
     </script>
 </body>
 
